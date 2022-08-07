@@ -1,0 +1,25 @@
+{
+    "name": "luk-ui",
+    "version": "1.0.1",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "build": "tsc --build --clean && tsc && copy package.json .\\dist && copy README.md .\\dist",
+        "rollup": "tsc --build --clean && rollup -c && copy package.json .\\dist && copy README.md .\\dist"
+    },
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "@emotion/react": "^11.10.0",
+        "@emotion/styled": "^11.10.0",
+        "@rollup/plugin-typescript": "^8.3.4",
+        "@types/react": "^18.0.15",
+        "react": "^18.2.0",
+        "react-dom": "^18.2.0",
+        "rollup-plugin-peer-deps-external": "^2.2.4",
+        "rollup-plugin-terser": "^7.0.2",
+        "tslib": "^2.4.0",
+        "typescript": "^4.7.4"
+    }
+}
